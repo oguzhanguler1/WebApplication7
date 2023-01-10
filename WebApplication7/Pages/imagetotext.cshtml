@@ -1,0 +1,24 @@
+﻿@page
+@model WebApplication7.Pages.imagetotextModel
+@{
+
+
+}
+
+
+
+
+@if (@WebApplication7.Pages.imagetotextModel.hasData)
+{
+    <p>Image url recived succesfully</p>
+    <p>@WebApplication7.Pages.imagetotextModel.result_text</p>
+}
+
+<h3> Image to Text Generator</h3>
+<div class="container">
+    <form method="post">
+        <label for="image_url" Image Url></label><br>
+        <input type="text" id="image_url" name="image_url"><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+</div>
